@@ -1,0 +1,18 @@
+# Xiaomi Mi Pad Kernel source
+
+## Download
+* Download or clone the latest toolchain from <http://github.com/Christopher83/arm-cortex_a15-linux-gnueabihf-linaro_4.9> in a directory *(For example, `/home/<your_name>/toolchain/linaro-4.9/`)*.
+* Download or clone the kernel source in a directory *(For example, `/home/<your_name>/kernel/mocha/`)*.
+* Install some required OS packages.
+```bash
+sudo apt-get install build-essential
+```
+
+## Build
+* Open terminal in the `kernel/mocha` directory.
+* Run following commands,
+```bash
+make mocha_user_defconfig ARCH=arm
+make ARCH=arm CROSS_COMPILER=/home/<your_name>/toolchain/linaro-4.9/bin/arm-cortex_a15-linux-gnueabihf-
+```
+* Once build is complete, you can find the `zImage` in `arch/arm/boot/` directory and `tegra124-mocha.dtb` in `arch/arm/boot/dts/` directory.
