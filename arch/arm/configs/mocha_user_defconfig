@@ -1117,15 +1117,7 @@ CONFIG_CAIF=y
 CONFIG_CAIF_NETDEV=y
 # CONFIG_CAIF_USB is not set
 # CONFIG_CEPH_LIB is not set
-CONFIG_NFC=y
-# CONFIG_NFC_NCI is not set
-# CONFIG_NFC_HCI is not set
-
-#
-# Near Field Communication (NFC) devices
-#
-CONFIG_BCM2079X_NFC=y
-# CONFIG_NFC_PN533 is not set
+# CONFIG_NFC is not set
 CONFIG_HAVE_BPF_JIT=y
 
 #
